@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Inter:wght@900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header class="header">
@@ -39,20 +44,20 @@
                         </p>
                         <ul class="user-list">
                             <li class="user-list__item">
-                               <a href="#" class="user-list__link">
-                                <img src="/images/like.svg" alt="">
-                               </a> 
+                                <a href="#" class="user-list__link">
+                                    <img src="/images/like.svg" alt="">
+                                </a>
                             </li>
                             <li class="user-list__item">
-                               <a href="#" class="user-list__link">
-                                <img src="/images/user.svg" alt="">
-                               </a> 
+                                <a href="#" class="user-list__link">
+                                    <img src="/images/user.svg" alt="">
+                                </a>
                             </li>
                             <li class="user-list__item">
-                               <a href="#" class="user-list__link basket">
-                                <img src="/images/basket.svg" alt="">
-                                <p class="basket__num">1</p>
-                               </a> 
+                                <a href="#" class="user-list__link basket">
+                                    <img src="/images/basket.svg" alt="">
+                                    <p class="basket__num">1</p>
+                                </a>
                             </li>
                         </ul>
 
@@ -91,11 +96,59 @@
             </div>
         </div>
     </header>
-    
+
+
+
+    <section class="banner-section">
+        <div class="container">
+            <div class="banner-section__inner">
+                <div class="banner-section__slider">
+                    <a class="banner-section__slider-item" href="#">
+                        <img class="banner-section__inner-img" src="images/banner-slider.jpg" alt="слайдер с баннера">
+                    </a>
+                    <a class="banner-section__slider-item" href="#">
+                        <img class="banner-section__inner-img" src="images/banner-slider.jpg" alt="слайдер с баннера">
+                    </a>
+                    <a class="banner-section__slider-item" href="#">
+                        <img class="banner-section__inner-img" src="images/banner-slider.jpg" alt="слайдер с баннера">
+                    </a>
+                    <a class="banner-section__slider-item" href="#">
+                        <img class="banner-section__inner-img" src="images/banner-slider.jpg" alt="слайдер с баннера">
+                    </a>
+                    <a class="banner-section__slider-item" href="#">
+                        <img class="banner-section__inner-img" src="images/banner-slider.jpg" alt="слайдер с баннера">
+                    </a>
+                    <a class="banner-section__slider-item" href="#">
+                        <img class="banner-section__inner-img" src="images/banner-slider.jpg" alt="слайдер с баннера">
+                    </a>
+                </div>
+                <a class="banner-section__item sale-item" href="#">
+                    <div class="sale-item__top">
+                        <p class="sale-item__info">
+                            акция
+                        </p>
+                        <div class="sale-item__price">
+                            <div class="price sale-item__price-new">190 000</div>
+                            <div class="price sale-item__price-old">225 000</div>
+
+                        </div>
+                    </div>
+                    <img class="sale-item__img" src="images/sale-1.png" alt="">
+                    <h5 class="sale-item__title">Лодочный мотор Suzuki DF9.9BRS</h5>
+                    <p class="sale-item__footer">
+                        Акция действует до
+                        <span>31.08.2020</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
