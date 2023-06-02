@@ -170,7 +170,7 @@ body {
     right: 0;
     background-color: #1C62CD;
     height: 3px;
-    bottom: -2px;
+    bottom: 0;
     transform: all .3s;
 }
 
@@ -391,14 +391,12 @@ body {
     font-family: 'SFProDisplay-Bold', sans-serif;
     font-weight: 700;
 }
-.search__content {
-}
 
-.search__content-item {
+.tabs-content {
  display: none;
 }
 
-.search__content-item.tabs-content--active{
+.tabs-content.tabs-content--active{
     display: block;
 }
 
@@ -688,4 +686,28 @@ body {
     border-bottom: 1px solid #1C62CD;
     color: #1C62CD;
     
+}
+
+.product__title{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2F3035;
+    padding-bottom: 25px;
+}
+
+
+.products__tabs{
+    margin-bottom: 25px;
+    
+}
+
+.products__tab{
+    padding-bottom: 10px;
+    margin-right: 50px;
+}
+
+.products__tab.tab--active{
+    border-bottom: 2px solid #1C62CD;
 }
