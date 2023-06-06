@@ -136,7 +136,7 @@ body {
     border-radius: 50%;
     text-align: center;
     bottom: -14px;
-    right: -14px;
+    right: -1px;
 
 }
 
@@ -199,7 +199,8 @@ body {
     max-width: 870px;
 }
 
-.banner-section__slider-btn {
+.banner-section__slider-btn,
+.product-slider__slider-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -520,7 +521,7 @@ body {
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     text-align: center;
-    padding: 52px 20px 31px;
+    padding: 40px 20px 31px;
     transition: all .3s;
 
 }
@@ -574,15 +575,17 @@ body {
     position: absolute;
     width: 60px;
     height: 40px;
-    background-color: #fff;
     background: #1C62CD;
     border-radius: 10px 0px 0px 0px;
     border: none;
     bottom: 0;
     right: 0;
     padding-top: 7px;
+    
     cursor: pointer;
+    z-index: 10;
 }
+
 
 .product-item__hover-text{
     display: inline-block;
@@ -711,3 +714,137 @@ body {
 .products__tab.tab--active{
     border-bottom: 2px solid #1C62CD;
 }
+
+.product-slider__slider-btnprev {
+    left: -20px;
+}
+
+.product-slider__slider-btnnext {
+    right: -20px;
+}
+
+.slick-slide img {
+    display: inline;
+}
+
+.product__more{
+    text-align: center;
+    width: 252px;
+    height: 50px;
+    background: #F0F0F4;
+    margin: 35px auto 86px;
+
+}
+
+.product__more-link{
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #2F3035;
+    padding: 16px 43px;
+}
+
+.footer{
+    margin-top: 80px;
+    background-color: #F0F0F4;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content:center;
+    padding: 46px 0 22px;
+
+}
+
+.footer__bottom-link{
+    font-size: 10px;
+    line-height: 12px;
+    color: #48494D;
+    margin: 0 40px;/*в макете 80 пикселей.. но мы так сделали что бы одинаково центровалось*/
+}
+
+.footer__top{
+    padding-top: 41px;
+}
+
+.footer__top-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__top-newslatter{
+    width: 296px;
+    margin-right: 45px;
+}
+
+.footer__top-title{
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F3035;
+}
+
+.footer-form{
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-form__input{
+    border: none;
+    background-color: #fff;
+    width: 188px;
+    padding: 8px 48px 8px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+}
+
+.footer-form__button{
+    width: 109px;
+    padding: 10px 16px;
+    background-color: #1c62cd;
+    text-transform: uppercase;
+    font-family: 'SFProDisplay-Semibold', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    border: none;
+}
+
+.footer__top-item{
+    max-width: 200px;
+}
+
+.footer-list{
+
+    font-size: 14px;
+    line-height: 25px;
+
+}
+
+.footer__top-social{
+    width: 250px;
+}
+
+.social-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /*что бы он взял ширину родителя и отцентровался*/
+    
+}
+
+.social-list__item{
+    margin-right: 25px;
+}
+
+.social-list__item:last-child{
+    margin-right: 0;
+}
+
