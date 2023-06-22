@@ -351,8 +351,6 @@ body {
   padding: 11px 26px 12px;
 }
 
-.search_inner {
-}
 .search__tabs {
   margin-bottom: 25px;
 }
@@ -1177,9 +1175,6 @@ body {
   padding-left: 26px;
 }
 
-.filter__item-listselect {
-}
-
 .jq-selectbox__select {
   font-family: "Barlow", sans-serif;
   font-weight: 400;
@@ -1299,6 +1294,9 @@ body {
 
 .btn-checked .jq-checkbox.checked {
   background: #1c62cd;
+}
+
+.btn-checked .jq-checkbox.checked ~ .btn-checked__text {
   color: #fff;
 }
 
@@ -1308,4 +1306,68 @@ body {
 
 .btn-checked__text {
   position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-57%);
+  z-index: 5;
+}
+
+.filter-btn__send {
+  max-width: 252px;
+  height: 50px;
+  background: #f0f0f4;
+  border: none;
+  color: #bdbec2;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  padding: 16px 85px;
+  cursor: pointer;
+}
+
+.filter__extra {
+  color: #2f3035;
+  font-size: 13px;
+  margin-top: 15px;
+  padding-right: 29px; /*ставим паддинг что бы на ее место поставить иконку, и это вместе оцентровалось*/
+  position: relative;
+  display: inline-block;
+}
+
+.filter__extra::after{
+  content: '';
+  position: absolute;
+  background-image: url(../images/arrow-down.svg);
+  width: 12px;
+  height: 8px;
+  right: 0;
+  top: 9px;
+}
+
+.filter__extra.filter__item-drop--active::after {
+  transform: rotate(180deg); /*развернуть на 180 градусов*/
+}
+
+.filter-btn__send--active {
+  background-color: #1c62cd;
+  color: #fff;
+  cursor: pointer;
+}
+
+.aside-filter__item-btn {
+  text-align: center;
+}
+
+.filter__extra__content{
+  display: none;
+}
+
+.filter-btn__reset {
+  margin-top: 15px;
+  color: #c4c4c4;
+  font-size: 13px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #c4c4c4;;
 }
