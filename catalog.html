@@ -131,12 +131,12 @@
             <button>еще</button>
           </div>
           <div class="catalog__filter-btn">
-            <select class="filter-style">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
+            <select class="filter-style select-item">
+              <option value="">По популярности</option>
+              <option value="">Подороже</option>
+              <option value="">Подешевле</option>
             </select>
-            <button class="catalog__filter-btngrid">
+            <button class="catalog__filter-btngrid catalog__filter-button catalog__filter-button--active">
               <svg
                 width="23"
                 height="21"
@@ -190,7 +190,7 @@
                 />
               </svg>
             </button>
-            <button class="catalog__filter-btnline">
+            <button class="catalog__filter-btnline catalog__filter-button">
               <svg
                 width="25"
                 height="19"
@@ -569,12 +569,20 @@
                           </div>
                         </div>
                       </li>
-                      <li class="aside-filter__item-drop aside-filter__item-btn">
-                        <button class="filter-btn__send filter-btn__send--active" type="submit">ВЫБРАТЬ</button>
+                      <li
+                        class="aside-filter__item-drop aside-filter__item-btn"
+                      >
+                        <button
+                          class="filter-btn__send filter-btn__send--active"
+                          type="submit"
+                        >
+                          ВЫБРАТЬ
+                        </button>
                         <p class="filter__extra">Дополнительные параметры</p>
                         <div class="filter__extra__content">more</div>
-                        <button class="filter-btn__reset" type="submit">Сбросить фильтр</button>
-
+                        <button class="filter-btn__reset" type="submit">
+                          Сбросить фильтр
+                        </button>
                       </li>
                     </ul>
                   </form>

@@ -478,15 +478,22 @@ body {
 .product-item-wrapper {
   position: relative;
   width: 271px;
+  transition: all 0.3s;
 }
+
+.product-item-wrapper.product-item-wrapper--list{
+  width: 100%;
+}
+
 
 .product-item {
   min-height: 400px;
+  width: 100%;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
   padding: 40px 20px 31px;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .product-item__img {
@@ -867,6 +874,11 @@ body {
   cursor: pointer;
 }
 
+.catalog__filter-btn {
+  display: flex;
+  align-items:center;
+}
+
 .catalog__filter-btn button {
   background-color: transparent;
   border: none;
@@ -875,9 +887,37 @@ body {
   padding: 0;
 }
 
+
 .catalog__filter-btn button + button {
   margin-left: 10px;
 }
+
+button.catalog__filter-btnline {
+  width: 25px;
+  height: 19px;
+}
+
+button.catalog__filter-btngrid {
+  width: 26px;
+  height: 21px;
+}
+
+.catalog__filter-button{
+  opacity: 0.3;
+}
+
+.catalog__filter-button--active{
+  opacity: 1;
+}
+
+.select-item {
+  border: 1px solid #d7d9df;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 34px;
+  padding: 0
+}
+
 
 .catalog__filter-btngrid {
   background-color: transparent;
@@ -1182,8 +1222,8 @@ body {
   line-height: 17px;
   color: #48494d;
 
-  height: 32px;
-  padding: 0 22px 0 5px;
+  height: 25;
+  padding: 7px 45px 0 20px;
   border-radius: 0;
   background: transparent;
   box-shadow: none;
@@ -1206,7 +1246,7 @@ body {
   width: 12px;
   height: 8px;
   border-left: none;
-  top: 6px;
+  top: 12px;
   right: 9px;
 }
 
@@ -1334,8 +1374,8 @@ body {
   display: inline-block;
 }
 
-.filter__extra::after{
-  content: '';
+.filter__extra::after {
+  content: "";
   position: absolute;
   background-image: url(../images/arrow-down.svg);
   width: 12px;
@@ -1358,7 +1398,7 @@ body {
   text-align: center;
 }
 
-.filter__extra__content{
+.filter__extra__content {
   display: none;
 }
 
@@ -1369,5 +1409,5 @@ body {
   background-color: transparent;
   border: none;
   padding: 0;
-  border-bottom: 1px solid #c4c4c4;;
+  border-bottom: 1px solid #c4c4c4;
 }

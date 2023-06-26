@@ -44,5 +44,18 @@ $(function () {
 
     });
 
+    $('.catalog__filter-btngrid').on('click', function(){ /*кликая добавляем класс актив */
+        $(this).addClass('catalog__filter-button--active');
+        $('.catalog__filter-btnline').removeClass('catalog__filter-button--active'); /*а у второго товарища мы удаляем этот класс */
+        $('.product-item-wrapper').removeClass('product-item-wrapper--list') /*когда мы кликам на лайн - ширина должна меняться в меньшую сторону, т.е. мы удаляем класс со стилями листа */
+    });
+
+    $('.catalog__filter-btnline').on('click', function(){
+        $(this).addClass('catalog__filter-button--active');
+        $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
+        $('.product-item-wrapper').addClass('product-item-wrapper--list'); /*когда мы кликам на лайн - ширина должна меняться на 100%, ну или на определенный стиль присущий добавленному классу */
+
+    });
+
 
 });
